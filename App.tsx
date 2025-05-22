@@ -1,11 +1,15 @@
-import React from "react";
+import React from "react";git
 import {View} from 'react-native';
-import Welcome from './src/welcome';
+import Audio from './src/audio'
+
+
 const App=()=>{
   return(
     <View>
-      <Welcome />
-      <Welcome />
+      <Audiog />
+      
+  
+    
     </View>
   );
 
