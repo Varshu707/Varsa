@@ -6,7 +6,7 @@ import Audio from './src/audio'
 const App=()=>{
   return(
     <View>
-      <Audiog />
+      <Audio/>
       
   
     
