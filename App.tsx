@@ -1,15 +1,11 @@
-import React from "react";git
+import React from "react";
 import {View} from 'react-native';
-import Audio from './src/audio'
-
-
+import   Effect from './src/effect';
 const App=()=>{
   return(
     <View>
-      <Audio/>
-      
-  
     
+      <Effect />
     </View>
   );
 

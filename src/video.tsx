@@ -2,17 +2,21 @@ import { StyleSheet, Text, View,Dimensions } from 'react-native';
 import React from 'react';
 import Video from 'react-native-video';
 
-const VideoPlayer= () => {
+
+const Videoplayer = () => {
   return (
-    <View style={styles.contanier}>
-      <Text style={styles.title}> local video </Text>
+    <View style={styles.container}>
+
+      <Text style={styles.title}>Local Video</Text>
       <Video 
-        source={require('./assert/story.mp4')}
+        source={require('./assert/ringbell.mp3')}
         style={styles.video}
         controls
         resizeMode="contain"
         paused={true}
         />
+      
+
     </View>
   );
 };
@@ -20,11 +24,11 @@ const {width} =Dimensions.get('window');
 
 const styles = StyleSheet.create({
       container:{
-            flex:20,
+            flex:1,
             backgroundColor:'white',
             justifyContent:'center',
             alignItems:'center',
-            padding:100,
+            padding:150,
       },
       title:{
             color:'blue',
@@ -38,5 +42,5 @@ const styles = StyleSheet.create({
             height:(width - 56)*0.5625,
       },
 });
-export default VideoPlayer;
+export default Videoplayer;
 
