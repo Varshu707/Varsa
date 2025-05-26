@@ -1,13 +1,17 @@
 import React from 'react';
-import { View,Text} from 'react-native';
-const welcome=()=>{
-      return(
-            <View>
-                  <Text>Hello my World</Text>
-                  <Text>Wecome to ReactNative</Text>
-            </View>    
-      );
+import { View, Text, StyleSheet } from 'react-native';
 
-      
+const Welcome = ({navigation}) => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Welcome Screen!</Text>
+    </View>
+  );
 };
-export default welcome;
+
+export default Welcome;
+
+const styles = StyleSheet.create({
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  text: { fontSize: 24, fontWeight: 'bold' },
+});
